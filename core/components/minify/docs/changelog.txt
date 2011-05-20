@@ -1,0 +1,6 @@
+Changelog for minify.
+
+minify 0.1
+======================================
+- Starting Version
+
