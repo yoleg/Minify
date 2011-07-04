@@ -50,3 +50,4 @@ if ($minAsync) {
 }
 
 $modx->resource->_output = $output;
+return '';
