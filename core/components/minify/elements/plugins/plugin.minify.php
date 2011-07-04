@@ -34,7 +34,7 @@ $base_path = MODX_CORE_PATH.'/components/minify/';
 $f = $base_path.'functions.minify.php';
 if (file_exists($f)) {include $f;} else {$modx->log(modX::LOG_LEVEL_ERROR,'Minify not found at: '.$f);}
 
-$output = $modx->documentOutput;
+$output = $modx->resource->_output;
 
 if ($minCSS) {
   $CSS = new Optimized('css',$output,$info);
@@ -49,4 +49,4 @@ if ($minAsync) {
   $output = $Async->getOutput();
 }
 
-$modx->documentOutput = $output;
+$modx->resource->_output = $output;
